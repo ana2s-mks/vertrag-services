@@ -1,0 +1,14 @@
+spring:
+  datasource:
+    initialize: true
+    url: 'jdbc:h2:file:./data/testDB;AUTO_SERVER=TRUE'
+    driver-class-name: org.h2.Driver
+    username: 'test'
+    password: 'test'
+  jpa:
+    hibernate:
+      ddl-auto: update
+    generate-ddl: true
+  sql:
+    init:
+      mode: always
